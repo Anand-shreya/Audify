@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import InputField from './InputField'
+
 
 const Head=styled.div`
 display:flex;
@@ -16,7 +16,7 @@ margin-bottom:150px;
 const Header = (props) => {
   return (
     <Head>
-        <InputField title="Untitled" type="text" name="filename"/>
+        <div className='filler'></div>
         <img className="up" src={props.pic} alt="Up" />
     </Head>
   )

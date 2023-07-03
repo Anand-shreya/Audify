@@ -3,7 +3,6 @@ import logo from '../images/Name.jpg'
 import Greet from '../components/Greet.js'
 import Card from '../components/Card'
 import plus from '../Icons/plusCircle.png'
-import history from '../Icons/history.png'
 import Separator from '../components/Separator'
 
 const Welcome = () => {
@@ -13,11 +12,7 @@ const Welcome = () => {
             <Separator/>
             <div className="heading">
                 <Greet word="Welcome!"/>
-                <div className="cards">
-                    <Card title="Extract New Audio" pic={plus} path="/upload" color="#19F3FF" />
-                    <Separator/>
-                    <Card title="View History" pic={history} path="/history" color="#19F3FF"/>
-                </div>
+                    <Card title="Extract New Audio" pic={plus} path="/upload" color="#19F3FF" width="300px" />
             </div>
                              
     </div>
