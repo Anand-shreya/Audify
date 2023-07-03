@@ -21,11 +21,11 @@ const ButtonStyle=styled.div`
   }
 `
 
-const Button = ({variant,width,title,path,color}) => {
+const Button = ({variant,width,title,path,color,handleClick}) => {
   return (
     <div>
       <ButtonStyle variant={variant} 
-      width={width}><NavLink className="nav" to={path} style={{
+      width={width}><NavLink className="nav" to={path} onClick={handleClick} style={{
         color:color,
         textDecoration:"none",
       }} >{title}</NavLink></ButtonStyle>
