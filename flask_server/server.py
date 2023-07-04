@@ -1,3 +1,4 @@
+from dotenv import load_dotenv
 from flask import Flask, render_template, request, redirect, url_for, send_file
 from werkzeug.utils import secure_filename
 import os
@@ -8,9 +9,15 @@ import zipfile
 from flask_bcrypt import Bcrypt
 from flask_pymongo import PyMongo
 
+# Load environment variables from .env file
+load_dotenv()
+
+# Access the MONGO_URL environment variable
+mongo_url = os.getenv("MONGO_URL")
+
 app = Flask(__name__, static_folder='templates/build/static', template_folder='templates/build')
 bcrypt = Bcrypt(app)
-app.config["MONGO_URI"]="mongodb+srv://Audify:Audify-project@cluster0.oahhrjq.mongodb.net/Users"
+app.config["MONGO_URI"]=mongo_url
 
 mongo = PyMongo(app).db
 
