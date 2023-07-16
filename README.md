@@ -13,6 +13,6 @@ https://drive.google.com/file/d/1QbspFljumvURHwlqYi5aKYlYo8VK1ntJ/view?usp=shari
 
 - [Diya Arun](https://github.com/DiyaArun)
 - [Harshita Agrawal](https://github.com/harshiii12)
-- PRANATHI NIDADAVOLU
+- [PRANATHI NIDADAVOLU](https://github.com/Pranathi2611)
 - [RAJESHWARI JADHAV](https://github.com/Rajeshwari-Jadhav)
 - [SHREYA ANAND](https://github.com/Anand-shreya)
